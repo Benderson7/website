@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap');
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+}
+
+.hero-bg {
+    background-image: url('../images/music_resize.jpg'), url('../images/boylston_resize.jpg');
+    background-position: left, right;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 50% 100%, 50% 100%;
+}
+
+.top {
+    color: white;
+    padding: 5em 39em 5em 39em;
+    text-align: center;
+}
+
+.top header {
+    font-weight: bold;
+    font-size: 4rem; 
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.103);
+}
+
+.top h2 {
+    font-size: 1rem;
+}
+
+.top a {
+    background-color: #3163b485;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: .2em;
+    padding: .3rem .5rem;
+    display: inline-block;
+}
+  
+.top a:hover, a:active {
+    background-color:#3163b4;
+}
+
+.top p {
+    font-size: 1.2rem;
+    padding-top: 3rem;
+    animation: fadeIn 2s forwards;
+}
+
+.details-section {
+    background-image: url('../images/beach.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.scroll {
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.scroll h3 {
+    font-size: 2rem;
+}
+
+.scroll-container {
+    color: white;
+    background-color: rgb(53, 53, 53);
+    padding: 1rem 1rem 2rem 2rem;
+    margin-left: 1rem;
+    width: 50%;
+    border-radius: .4rem;
+}
+
+.duration {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+.scroll-container p {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(.3em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
