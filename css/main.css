@@ -2,102 +2,115 @@
 
 body {
     font-family: 'Fira Sans', sans-serif;
+    color: #1b0a1d;
+    margin: 0;
+    background-image: url("/images/pinksun1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    padding-top: 25em;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+#hero * {
     margin: 0;
 }
 
-.hero-bg {
-    background-image: url('../images/music_resize.jpg'), url('../images/boylston_resize.jpg');
-    background-position: left, right;
-    background-repeat: no-repeat,no-repeat;
-    background-size: 50% 100%, 50% 100%;
-}
-
-.top {
-    color: white;
-    padding: 5em 39em 5em 39em;
-    text-align: center;
-}
-
-.top header {
-    font-weight: bold;
-    font-size: 4rem; 
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.103);
-}
-
-.top h2 {
-    font-size: 1rem;
-}
-
-.top a {
-    background-color: #3163b485;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1rem;
-    border-radius: .2em;
-    padding: .3rem .5rem;
-    display: inline-block;
-}
-  
-.top a:hover, a:active {
-    background-color:#3163b4;
-}
-
-.top p {
-    font-size: 1.2rem;
-    padding-top: 3rem;
-    animation: fadeIn 2s forwards;
-}
-
-.details-section {
-    background-image: url('../images/beach.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 1rem;
-}
-
-h2 {
-    margin-left: 1rem;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.scroll {
+#bio-section {
     display: flex;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-.scroll h3 {
-    font-size: 2rem;
+
+#bio {
+    padding: 1em;
+    justify-content: space-between;
 }
 
-.scroll-container {
-    color: white;
-    background-color: rgb(53, 53, 53);
-    padding: 1rem 1rem 2rem 2rem;
-    margin-left: 1rem;
-    width: 50%;
-    border-radius: .4rem;
+#bio * {
+    margin: 0em 0em 1em 0em;
 }
 
-.duration {
-    font-size: 1.3rem;
-    font-style: italic;
-}
-.scroll-container p {
-    font-size: 1rem;
-    padding-left: 1rem;
+#bio h1 {
+    margin: 0;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(.3em);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+#bio h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#bio img {
+    padding: 0em 2em 0em 2em;
+}
+
+#goals-section {
+    text-align: center;
+}
+
+#goals-section * {
+    margin: 0;
+}
+
+#goals-section h1 {
+    margin-bottom: 1em;
+}
+#goals-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: .5em;
+}
+
+#goal-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+#goal-list div {
+    max-width: 20%;
+    padding: 0em 2em 0em 2em;
+}
+
+#footer {
+    padding-top: 5em;
+    text-align: center;
+}
+
+#exp-section {
+    text-align: center;
+    margin: 0em 30em 0em 30em;
+}
+
+.exp {
+    display: flex;
+    margin: 0em 0em 2em 0em;
+    text-align: left;
+}
+
+.exp div {
+    padding: 0em 2em 0em 2em;
+}
+
+.exp h2 {
+    font-size: 2.5rem;;
+}
+
+.exp h3 {
+    font-size: 1.7rem;
 }
