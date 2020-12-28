@@ -4,14 +4,14 @@ body {
     font-family: 'Fira Sans', sans-serif;
     color: #1b0a1d;
     margin: 0;
-    background-image: url("/images/pinksun1.jpg");
+    background-image: url("../images/pinksun1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 section {
-    padding-top: 25em;
+    padding-top: 23em;
 }
 
 h1 {
@@ -20,6 +20,40 @@ h1 {
 
 p {
     font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1b0a1d;
+}
+
+#nav {
+    padding-top: 0;
+}
+
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    opacity: 60%;
+}
+#nav li {
+    float: left;
+}
+
+#nav a {
+    font-size: 1.8rem;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .3em .3em;
+    text-decoration: none;
+}
+
+#nav a:hover {
+    background-color: gray;
 }
 
 #hero {
@@ -92,7 +126,7 @@ p {
     text-align: center;
 }
 
-#exp-section {
+.exp-section {
     text-align: center;
     margin: 0em 30em 0em 30em;
 }
@@ -109,6 +143,7 @@ p {
 
 .exp h2 {
     font-size: 2.5rem;;
+    margin-top: .4em;
 }
 
 .exp h3 {
