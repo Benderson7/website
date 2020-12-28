@@ -4,7 +4,7 @@ body {
     font-family: 'Fira Sans', sans-serif;
     color: #1b0a1d;
     margin: 0;
-    background-image: url("/images/pinksun1.jpg");
+    background-image: url("../images/pinksun1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
