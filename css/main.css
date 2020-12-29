@@ -27,6 +27,11 @@ a {
     color: #1b0a1d;
 }
 
+img {
+    object-fit: cover;
+    height: 100%;
+}
+
 #nav {
     padding-top: 0;
 }
@@ -71,7 +76,6 @@ a {
     margin-right: 25%;
 }
 
-
 #bio {
     padding: 1em;
     justify-content: space-between;
@@ -92,6 +96,8 @@ a {
 
 #bio img {
     padding: 0em 2em 0em 2em;
+    width: 48px;
+    height: 48px;
 }
 
 #goals-section {
@@ -100,6 +106,11 @@ a {
 
 #goals-section * {
     margin: 0;
+}
+
+#goals-section img {
+    width: 96px;
+    height: 96px;
 }
 
 #goals-section h1 {
@@ -111,7 +122,6 @@ a {
 }
 
 #goal-list {
-    list-style-type: none;
     display: flex;
     justify-content: center;
 }
@@ -128,17 +138,22 @@ a {
 
 .exp-section {
     text-align: center;
-    margin: 0em 30em 0em 30em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.exp-section img {
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 .exp {
-    display: flex;
-    margin: 0em 0em 2em 0em;
+    margin-bottom: 2em;
     text-align: left;
 }
 
 .exp div {
-    padding: 0em 2em 0em 2em;
+    padding: 0em 2em 8em 2em;
 }
 
 .exp h2 {
@@ -148,4 +163,88 @@ a {
 
 .exp h3 {
     font-size: 1.7rem;
+}
+
+.left img {
+    float: left;
+}
+
+.right img {
+    float: right;
+}
+
+.proj-section {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.proj {
+    display: grid;
+    text-align: center;
+}
+.proj img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proj div {
+    padding: 0em 2em 8em 2em;
+}
+
+.proj h2 {
+    font-size: 2.5rem;;
+    margin-top: .4em;
+    margin-bottom: 0;
+}
+
+.proj h3 {
+    font-size: 1.7rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1300px) {
+    .img {
+        
+    }
+    #goal-list {
+        text-align: center;
+        display: grid;
+    }
+    #goal-list div {
+        max-width: 90%;
+    }
+    .exp-section {
+        display: grid;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .exp {
+        display: grid;
+        text-align: center;
+        margin-top: 15em;
+    }
+    .exp div {
+        padding-bottom: 0;
+    }
+    .exp img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+    }
+    .proj-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #bio-section {
+        display: grid;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    section {
+        padding-top: 15em;
+    }
 }
