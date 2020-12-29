@@ -8,14 +8,23 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-section {
-    padding-top: 23em;
+    background-position: top;
+    text-align: center;
 }
 
 h1 {
     font-size: 4rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin: 0;
 }
 
 p {
@@ -28,8 +37,12 @@ a {
 }
 
 img {
-    object-fit: cover;
-    height: 100%;
+    width: 100%;
+}
+
+.spacer {
+    height: 65vw;
+    width: 100%;
 }
 
 #nav {
@@ -52,7 +65,6 @@ img {
     font-size: 1.8rem;
     display: block;
     color: white;
-    text-align: center;
     padding: .3em .3em;
     text-decoration: none;
 }
@@ -61,190 +73,166 @@ img {
     background-color: gray;
 }
 
-#hero {
-    text-align: center;
-    margin-bottom: 5em;
-}
-
 #hero * {
     margin: 0;
 }
 
 #bio-section {
-    display: flex;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-#bio {
-    padding: 1em;
-    justify-content: space-between;
-}
-
-#bio * {
-    margin: 0em 0em 1em 0em;
-}
-
-#bio h1 {
     margin: 0;
 }
 
-#bio h2 {
-    font-size: 1.5rem;
+#bio-section img {
+    width: 75%;
+}
+
+#bio * {
+    list-style-type: none;
     margin: 0;
 }
 
 #bio img {
-    padding: 0em 2em 0em 2em;
+    padding: 2em;
     width: 48px;
     height: 48px;
 }
 
-#goals-section {
-    text-align: center;
-}
 
-#goals-section * {
+#interests-section * {
     margin: 0;
 }
 
-#goals-section img {
+#interest-list div {
+    margin-bottom: 2.5em;
+}
+
+#interests-section img {
     width: 96px;
     height: 96px;
 }
 
-#goals-section h1 {
+#exp-section h1 {
     margin-bottom: 1em;
-}
-#goals-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: .5em;
-}
-
-#goal-list {
-    display: flex;
-    justify-content: center;
-}
-
-#goal-list div {
-    max-width: 20%;
-    padding: 0em 2em 0em 2em;
-}
-
-#footer {
-    padding-top: 5em;
-    text-align: center;
-}
-
-.exp-section {
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.exp-section img {
-    margin-left: 2em;
-    margin-right: 2em;
 }
 
 .exp {
-    margin-bottom: 2em;
-    text-align: left;
+    margin-bottom: 4em;
 }
 
-.exp div {
-    padding: 0em 2em 8em 2em;
+.exp img {
+    width: 50%;
+    height: auto;
 }
 
-.exp h2 {
-    font-size: 2.5rem;;
-    margin-top: .4em;
+#proj-section h1 {
+    margin-bottom: 1em;
 }
 
-.exp h3 {
-    font-size: 1.7rem;
-}
-
-.left img {
-    float: left;
-}
-
-.right img {
-    float: right;
-}
-
-.proj-section {
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-}
 .proj {
-    display: grid;
-    text-align: center;
+    margin-bottom: 4em;
 }
+
 .proj img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+    height: auto;
 }
 
-.proj div {
-    padding: 0em 2em 8em 2em;
-}
-
-.proj h2 {
-    font-size: 2.5rem;;
-    margin-top: .4em;
-    margin-bottom: 0;
-}
-
-.proj h3 {
-    font-size: 1.7rem;
-    margin-bottom: 0;
-}
-
-@media (max-width: 1300px) {
-    .img {
-        
+@media (min-width: 730px) {
+    section {
+        margin-left: 10%;
+        margin-right: 10%;
     }
-    #goal-list {
-        text-align: center;
+
+    #bio {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .spacer {
+        height: 50vw;
+    }
+}
+
+@media (min-width: 930px) {
+    section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .spacer {
+        height: 26em;
+    }
+
+    #bio-section {
+        margin-left: 15%;
+        margin-right: 15%;
         display: grid;
+        grid-template-columns: repeat(2, 50%);
     }
-    #goal-list div {
-        max-width: 90%;
+
+    #bio-section img {
+        width: 100%;
+        height: auto;
     }
-    .exp-section {
+
+    #bio {
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    #bio img {
+        width: 48px;
+    }
+
+    #interests-section {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    #interest-list {
         display: grid;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
+        grid-template-columns: repeat(3, 33%);
     }
+
+    #interest-list div {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0;
+    }
+
     .exp {
         display: grid;
-        text-align: center;
-        margin-top: 15em;
+        grid-template-columns: repeat(2, 50%);
+        margin-bottom: 8em;
     }
-    .exp div {
-        padding-bottom: 0;
-    }
+
     .exp img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        object-fit: contain;
+        width: 60%;
     }
-    .proj-section {
-        margin-left: 0;
-        margin-right: 0;
+
+    .exp div {
+        text-align: left;
+        margin-left: 2em;
+        margin-right: 2em;
     }
-    #bio-section {
+
+    .right img {
+        order: 2;
+        padding-left: 40%;
+    }
+
+    .proj {
         display: grid;
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
+        grid-template-columns: repeat(2, 50%);
+        margin-bottom: 8em;
     }
-    section {
-        padding-top: 15em;
+    
+    .proj img {
+        width: 100%;
+        height: auto;
+    }
+
+    .proj div {
+        text-align: left;
+        margin-left: 1em;
     }
 }
